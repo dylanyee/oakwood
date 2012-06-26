@@ -10,3 +10,5 @@ Author URI: dylanyee.com
 */
 
 everything is synced and locked and loaded?
+
+i did it with the imac

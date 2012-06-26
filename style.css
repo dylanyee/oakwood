@@ -1,0 +1,112 @@
+/*
+Theme Name: theOakwood
+Author: Dylan Yee
+Author URI: dylanyee.com
+*/
+
+html {
+	padding: 0px;
+	background: black;
+	height: 100%;
+	color: #FFF;
+}
+body {
+	margin: 0px;
+	height: 100%;
+}
+a, a:link, a:hover,a:focus, a:active, a:visited  {
+	color: #FFF;
+	text-decoration: none;
+}
+ul, li {
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	display: block;
+	position: absolute;
+	background: black;
+	border-bottom: 1px solid #333;
+	overflow:  ;
+	width: 100%;
+}
+#site-title {
+	display: block;
+	float: left;
+	background: url('headerlogo.png') no-repeat;
+	width: 148px;
+	height: 50px;
+	margin: 15px 50px;
+}
+nav {
+	display: inline-block;
+	line-height: 50px;
+	margin: 15px 50px;
+}
+nav li {
+	display: inline;
+	margin-right: 30px;
+	text-transform: uppercase;
+	font-size: .75em;
+	letter-spacing: .15em;
+}
+#main {
+}
+#content {
+	height:;
+	overflow:;
+}
+section {
+	display: block;
+	padding-top: 81px;
+	float: left;
+	height: 100%;
+	width: 20%;
+	padding: 0px;
+	margin: 0px;
+	overflow: scroll;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transition: all .1s ease-out;
+}
+section:nth-child(n+5){
+
+}
+.section-mask {
+	background: none;
+	overflow: scroll;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.section-title {
+	margin-top: 150%;
+	text-align: center;
+	text-shadow: 0px 0px 20px #000;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 2em;
+	color: rgba(255,255,255,0.95);
+}
+.section-content {
+	display: none;
+}
+section:hover .section-mask, #main.click section.clicked .section-mask {
+	display: inline-block;
+	background: url(filter.png) repeat;
+	-webkit-transition: background .3s ease-in-out;
+}
+section:hover .section-title {
+	color: #FFF;
+}
+section:hover .section-content {
+	padding: 0px 20px;
+	display: ;
+}
+#main.click section {
+	width: 15%;
+}
+#main.click section.clicked {
+	width: 40%;
+}
+

@@ -1,7 +1,10 @@
-<?php get_header(); ?>
-			<?php $args = array( 'post_type' => 'homepage-content', 'posts_per_page' => 5 );
-				$loop = new WP_Query( $args ); ?>
-				<?php while ($loop->have_posts()) : $loop->the_post(); ?>
+<?php
+/*
+Template Name: Home
+*/
+get_header(); ?>
+			<?php if (have_posts()) : ?>
+				<?php while (have_posts()) : the_post(); ?>
 					<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );?>
 					<section style="background-image: url(<?php echo $src[0]; ?>);">
 						<span class="section-mask">
@@ -16,7 +19,7 @@
 						</span>
 					</section>
 				<?php endwhile; ?>
-			
+			<?php endif; ?>
 		</div> <!-- /#main -->
 		<script type='text/javascript'>			
 			$("section").toggle(
@@ -28,4 +31,4 @@
 				$("#main").removeClass("click");
 				$(".section-mask").parent().removeClass("clicked");
 			});
-		</script> */ 
+		</script>

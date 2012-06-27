@@ -4,6 +4,22 @@ register_nav_menus( array(
 	'header_menu' => 'Header Menu'
 ) );
 
+// register custom post type
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'homepage-content',
+		array(
+			'labels' => array(
+				'name' => __( 'Homepage Sections' ),
+				'singular_name' => __( 'Section' )
+			),
+		'public' => true,
+		'has_archive' => false,
+		)
+	);
+}
+
+
 // add google analytics to footer
 function add_google_analytics() {
 	echo '<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>';

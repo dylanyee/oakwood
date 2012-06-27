@@ -80,7 +80,7 @@ section:nth-child(n+5){
 	float: left;
 }
 .section-title {
-	margin-top: 150%;
+	margin-top: 150px;
 	text-align: center;
 	text-shadow: 0px 0px 20px #000;
 	text-transform: uppercase;
@@ -90,6 +90,10 @@ section:nth-child(n+5){
 }
 .section-content {
 	display: none;
+}
+.clicked .section-content {
+	display: inherit;
+	padding: 0px 20px;
 }
 section:hover .section-mask, #main.click section.clicked .section-mask {
 	display: inline-block;

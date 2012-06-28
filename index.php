@@ -13,3 +13,5 @@
 					<?php endwhile; ?>
 				</div>
 		</div> <!-- /#main -->
+		
+		<?php is_single($post); ?>

@@ -6,7 +6,7 @@ Author URI: dylanyee.com
 
 html {
 	padding: 0px;
-	background: black;
+	background: ;
 	height: 100%;
 	color: #FFF;
 }
@@ -22,6 +22,26 @@ ul, li {
 	margin: 0px;
 	padding: 0px;
 }
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 2em;
+}
+p {
+	line-height: 1.5em;
+}
+blockquote {
+	border-left: 2px solid;
+	margin-left: 20px;
+	padding-left: 20px;
+}
+.home {
+	text-shadow: 0px 0px 20px #000;
+}
+/*
+	HEADER
+*/
 header {
 	display: block;
 	position: absolute;
@@ -50,6 +70,9 @@ nav li {
 	font-size: .75em;
 	letter-spacing: .15em;
 }
+/*
+	HOME
+*/
 #main {
 }
 #content {
@@ -93,7 +116,7 @@ section:nth-child(n+5){
 }
 .clicked .section-content {
 	display: inherit;
-	padding: 0px 20px;
+	padding: 0px 50px;
 }
 section:hover .section-mask, #main.click section.clicked .section-mask {
 	display: inline-block;
@@ -104,7 +127,7 @@ section:hover .section-title {
 	color: #FFF;
 }
 section:hover .section-content {
-	padding: 0px 20px;
+	padding: 0px 50px;
 	display: ;
 }
 #main.click section {
@@ -113,4 +136,41 @@ section:hover .section-content {
 #main.click section.clicked {
 	width: 40%;
 }
+/*
+	BLOG
+*/
+h2, h3 {
+	font-family: DIN, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: bold;
+}
+h2 {
+	font-size: 1.2em;
+}
+h3 {
+	font-size: 1em;
+}
+.page-id-4 {
+	background: #fff;
+}
+.blog-content a, .blog-content a:link, .blog-content a:hover, .blog-content a:focus, .blog-content a:active, .blog-content a:visited  {
+	color: #999;
+	text-decoration: none;
+}
+.page-id-4 header {
+	position: inherit;
+}
+.blog-content {
+	padding-top: 40px;
+	width: 640px;
+	margin: 0px auto;
+	color: #000;
+}
+.post-entry {
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	border-bottom: solid;
+}
+
 
